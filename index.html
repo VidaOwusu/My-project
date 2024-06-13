@@ -5,14 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gracey Villa</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swipper.css">
+
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <img src="logo" alt="logo">
         <div id="nav-links">
             <span>Home</span>
@@ -25,7 +36,6 @@
     </nav>
     <section id="hero">
         <header>
-            <span id="subtext-one" class="courgette-regular">Welcome to Gracey Villa</span>
             <span id="subtext-two" class="Poppins-bold">Enjoy A Luxury Experience</span>
         </header>
         <div class="btn">
@@ -42,28 +52,232 @@
                 Our villa is not just a destination; it's an experience crafted to indulge your senses and rejuvenate
                 your spirit. Each corner of our estate exudes timeless beauty and unrivaled comfort, offering a
                 sanctuary where moments of bliss are effortlessly captured.
-
-                Indulge in the epitome of luxury living within our lavishly appointed accommodations, where every room
-                is a haven of serenity and style. Whether you're lounging in the sun-drenched embrace of our private
-                poolside retreats or savoring gourmet delights in our meticulously curated dining spaces,
-                every aspect of your stay is thoughtfully designed to elevate your journey.
             </p>
 
            <div id="button">Reserve your room now</div>
         </div>
-        <!-- <div>
-            <img id="about-image" src="./assests/images/hotel_hall.jpg" alt="hall">
-        </div> -->
+
         <div>
             <img id="about-image" src="./assests/images/arra-luxury-8274729_1920.jpg" alt="Luxury">
         </div>
-        <!-- <div>
-            <img id="about-image" src="./assests/images/new.webp" alt="new">
-        </div> -->
+
+    </section>
+   
+    <nav>
+        <img id="logo" src="./assests/logos/logo-no-background.png" alt="Logo">
+
+        <div id="nav-links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Our Rooms</a></li>
+                <li><a href="">Restaurant</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+
+        </div>
+        <div class="icons-header">
+            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+            <a href="#"><i class="fa fa-facebook m-l-21"></i></a>
+            <a href="#"><i class="fa fa-twitter m-l-21"></i></a>&nbsp; &nbsp; &nbsp;
+            <div class="bars" onclick="toggleModal()">
+                <div class="bar1"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div id="sidebar-modal" class="sidebar-modal">
+        <span class="close-btn" onclick="toggleModal()">&times;</span><br><br><br>
+        <div class="sidebar-modal-content">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="submit-button-reserve">
+            <button type="submit" class="btn3 flex-c-m size10 txt11 trans-0-4">RESERVATION</button>
+        </div>
+        <br><br>
+        <h4 class="gallery-modal-text">
+            GALLERY
+        </h4>
+
+        <div class="modal-gallery">
+            <a class="item-gallery-side" href="images/photo-gallery-01.jpg">
+                <img src="./assests/images/food.jpg" alt="GALLERY">
+            </a>
+            <a class="item-gallery-side" href="images/photo-gallery-02.jpg">
+                <img src="./assests/images/food1.jpg" alt="GALLERY">
+            </a>
+            <a class="item-gallery-side" href="images/photo-gallery-03.jpg">
+                <img src="./assests/images/food2.jpg" alt="GALLERY">
+            </a>
+            <a class="item-gallery-side" href="images/photo-gallery-04.jpg">
+                <img src="./assests/images/dinner_image.jpeg" alt="GALLERY">
+            </a>
+            <a class="item-gallery-side" href="images/photo-gallery-05.jpg">
+                <img src="./assests/images/bar.jpg" alt="GALLERY">
+            </a>
+            <!-- <a class="item-gallery-side" href="images/photo-gallery-06.jpg">
+            <img src="./assets/images/hotdog.jpg" alt="GALLERY">
+            </a>                     -->
+    </div>
+
+    </div>
+    <section id="hero">
+        <div id="hero-overlay">
+            <header>
+                <!-- <span id="subtext-one" >Welcome to</span> -->
+                <!-- <span id="subtext-two" class="poppins-bold">GRACEY VILLA</span> -->
+            </header>
+            <!-- <button class="menu-button">Look Menu</button> -->
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./assests/images/New folder/summer-842140_1920.jpg" style="width:100%; height: 100vh;">
+            </div>
+            <div class="mySlides fade">
+                <img src="./assests/images/New folder/hero.jpg" style="width:100%; height: 100vh;">
+            </div>
+            <div class="mySlides fade">
+                <img src="./assests/images/slider-4.jpg.webp" style="width:100%; height:100vh;">
+            </div>
+            <button class="arrow-slick1 prev-slick1 slick-arrow" onclick="plusSlides(-1)"><i class="fa fa-angle-left"
+                    aria-hidden="true"></i></button>
+            <button class="arrow-slick1 next-slick1 slick-arrow" onclick="plusSlides(1)"><i class="fa fa-angle-right"
+                    aria-hidden="true"></i></button>
+            <div class="dots-container" style="text-align:center; position:absolute; bottom: 20px; width: 100%;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-one" id="next">
+        <div class="availability-container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="playfair-display">Check Availability</h2>
+                </div>
+            </div>
+            <div class="availability-information">
+                <div class="col-md-12">
+                    <form action="#" class="availability-form">
+                        <div class="form-row justify-content-center align-items-end">
+                            <div class="col-md-2 mb-3">
+                                <label for="checkin_date" class="mukta-mahee-regular">Check In</label>
+                                <div class="field-icon-wrap">
+                                    <div class="icon"><span class="icon-calendar"></span></div>
+                                    <input type="text" id="checkin_date" class="form-control" placeholder="MM/DD/YYYY">
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="checkout_date" class="mukta-mahee-regular">Check Out</label>
+                                <div class="field-icon-wrap">
+                                    <div class="icon"><span class="icon-calendar"></span></div>
+                                    <input type="text" id="checkout_date" class="form-control" placeholder="MM/DD/YYYY">
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="adults" class="mukta-mahee-regular">Adults</label>
+                                <div class="field-icon-wrap">
+                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                    <select name="" id="adults" class="form-control">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="children" class="mukta-mahee-regular">Children</label>
+                                <div class="field-icon-wrap">
+                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                    <select name="" id="children" class="form-control">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <button class="btn btn-primary">Check Availability</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="about">
+        <div id="about-text">
+            <div class="sub-header">
+                <span class="playfair-display">Welcome to</span>
+                <span class="poppins-bold">Gracey Resort</span>
+            </div>
+            <div class="div-text">
+                <p class="txt1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur distinctio, optio
+                    odit consectetur adipisci.
+                </p>
+                <p class="txt2">Nobis sunt architecto nulla voluptatem sed, beatae quia
+                    consequatur excepturi quisquam itaque optio eveniet, recusandae saepe accusantium harum,
+                    temporibus dolores officia. Aspernatur voluptatem vitae optio atque?
+                </p>
+            </div>
+
+            <div>
+                <button id="btn1">Read More</button>
+            </div>
+        </div>
+        <div class="flex-container wrap-pic-booking hov-img-zoom m-l-r-auto">
+            <img src="./assests/images/New folder/about_feature_image.png" alt="About image">
+        </div>
+    </section>
+
+    <section class="swiper mySwiper">
+        <h3 id="gallery-text">Our Luxury Rooms</h3>
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="./assests/images/New folder/slider-5.jpg.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assests/images/New folder/slider-3.jpg.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assests/images/New folder/slider-2.jpg.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assests/images/bedroom.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assests/images/bedroom2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assests/images/hotel_room1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assests/images/hotelroom_image.webp" alt="">
+            </div>
+        </div>
+        </div>
     </section>
     <section>
-        <div class="sub">
-            <span class="courgette-regular">Unwind With Your Family</span>
+        <div class="sub-header">
+            <span class="playfair-display">Unwind With Your Family</span>
             <h3 class="poppins-bold">in our Luxury Services</h3>
         </div>
         <div class="flex-container">
@@ -90,8 +304,9 @@
     </section>
 
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/swipper.js"></script>
 </body>
 
 </html>
