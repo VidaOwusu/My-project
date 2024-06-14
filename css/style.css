@@ -269,7 +269,7 @@
   }
   
   .sub-header :nth-child(2) {
-    color:#f1a013; 
+    color:#ec1d25; 
     font-size: 30px;
     line-height: 1.2;
     text-transform: uppercase;
@@ -859,7 +859,7 @@
   }
   
   #video-overlay span:first-child{
-    color:#f1a013;
+    color:#ec1d25;
   }
   
   .header-two{
@@ -1159,7 +1159,7 @@
     gap: 10px;
     padding: 10px;
     height: 510px;    
-    background-color: #191818;
+    background-color: -#191818;
   }
   
   .footer h4 {
@@ -1551,8 +1551,8 @@
   
   .btn-primary {
     color: #fff;
-    background-color:#FD7E14;
-    border-color: #FD7E14;
+    background-color:#ec1d25;
+    border-color: #ec1d25;
     border-radius: 30px;
     padding-left: 70px;
     padding-right: 70px;
@@ -1561,8 +1561,8 @@
   }
   #btn1{
     border-radius: 20px;
-    background-color:#FD7E14;
-    border-color: #FD7E14; 
+    background-color:#ec1d25;
+    border-color: #ec1d25; 
     border-radius: 30px;
     padding-left: 30px;
     padding-right: 30px;
@@ -1586,6 +1586,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f1a013;
+  color: #ec1d25;
   margin-bottom: 20px;
  }
